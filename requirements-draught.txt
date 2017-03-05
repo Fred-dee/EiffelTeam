@@ -1,0 +1,31 @@
+1)Functional Requirments:
+	-Create Notification
+	-Update notification
+	-Delete Notification
+	-send e-mail
+	-send sms
+	-Send targeted/specified user notifications
+	-access to User module (for name, email, student number) to send notification
+	
+	-e-mail account from which to send emails from
+	 --email to sms gatway provider
+	OR
+	-external sms service provider from which to send text messages from (some also send emails for you)
+
+
+2) Non-functional Requirments:
+	-Accessable through web front end*	
+	-Sheduled desemanation of notifications
+		--automitive process: automatically sends to listed students etc.
+	-Other subsystems (Add ons) should be able to integrate with and send notifications through an interface (thus Notification subsystem is not dependent on or beholdent unto Add on subsystems), e.g. update targeted users on their achivements/distance walked/events
+	
+
+3) Quality Attribute/Requirements:
+	-Notification Indication
+		--if idication of subsystem pull requists should be low on bandwidth and on battery consumption
+	-Enycypted
+	-uniformed dormatting for sending messages (create one message that is formatted for both sms and email)
+		--potential automative subsystem that breaks message down and rebuilds for each format before sending
+	-Low use of bandwidth
+	-setup to integrate with external API for easy sms messaging
+
