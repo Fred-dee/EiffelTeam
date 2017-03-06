@@ -1,14 +1,13 @@
 # EiffelTeam
 Cos 301 Project phase 2
 
-This team will be focused on the following aspects of the NavUp system :
-    Users 
-    Notifications
-Points of Interest
-Fitness
+This is the Fitness subsystem with a modular approach.
 
-These aspects have been chosen based on the design specifications of these parts and how they can all be incorporated into one another. Additional information will be added to eac aspect as the development process continues.
+The Fitness system is responisble for tracking the amount of steps the user takes on campus. These steps will be used to generate rewards based on progress and general fitness awareness.
 
-Looking into :
-    Calendar Subsystem
-Notification Panel based on Fitness, Point of interests and Calendar entries.
+There will be a top ten leaderboard which will be displayed to the enite audence of the application in an attempt to get people interested and competetively engaged in the fitness game.
+
+Systems this will interac with are :
+    * Notifications 
+    * GIS
+    * User
