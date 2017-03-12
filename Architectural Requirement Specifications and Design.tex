@@ -112,7 +112,18 @@
 			{The Notification Module will provide a simple interface through which most communication and interaction with the subsystem will be done. This ensures a highly moduler design. This interface allows for easy message creation by creating notification with various overloaded functions. It also allows for notification retrieval, updating and deletion.\\ \\The NotificationsManager class implements the interface and provides the administrative functionality required to send notifications. It interfaces with the User Module to get users for their details by either getting users or lists of users, called user groups. Updates notifications and retrieves them from a stored list. It also ensures that notification are sent when they need to go out. Furthermore it tests the syntax structure of the message it is required to send before handing it off to the abstract factory class AbstractNotifcationFactory.\\ \\The AbstractNotificationFactory class is an interface that allows access to two concrete factories that implement a different concrete type of the Notification class. one being a email factory and the other being a SMS factory. Once these diffrent kinds of concreate Notification types have been created they are handed back to the NotificationsManger, which stores them for when they need to be sent.\\\\Using dependency injection, the NotificationsManager hands off the required notifications and users to the MessageSender class who interfaces with the required web technologies and handles the sending of notifications to each  or groups of end-user.}
 		\subsubsection{Fitness Module}
 		\subsubsection{Point Of Interest Module}
-	
+				\section{Point Of Interest Module}
+		        \begin{figure}[h]
+		            \includegraphics[width=\textwidth]{./Images/POI_Usecase.jpg} 
+		            \caption{Point of interest module use case diagram}
+		        \end{figure}
+
+		        \begin{figure}[h]
+		            \includegraphics[width=\textwidth]{./Images/POI_Class.jpg} 
+		            \caption{Point of interest module class diagram}
+		        \end{figure}
+
+{The point of interest module will be used to give an interface that will allow users to visit points of interest on campus and view information about the various points of interest. There are only 2 classes in this module, and those are the clsPoint_of_interest and the navigation_Node. The clsPoint_of_Interest will communicate with 3 sections, the database that contains all of the information about the particular point, and also with the Navigation node and lastly with the Achievements classes./// The Navigation_Node is used to retrieve the user's current location and match it with the point of interest's location to determine if the user is currently at the point. The Navigation_Node retrieves the user's location by communicating with the GIS and receiving the location. When the location is retrieved, it is requested by the clsPoint_of_Interest and then the information about the current point can be retrieved and displayed. The Point_Of_Interest needs to communicate with the achievement classes in order to determine if a user qualifies for an achievement or not}
 		\newpage
 		\subsection{Physical view}
 	
