@@ -59,7 +59,7 @@
 	\newpage
 	\section{Introduction}
 		\subsection{Purpose}
-		The purpose of this document is to outline the design of the system to be developed. This document can be analysed from a more technical view point and is meant to be an technical outline for developers.  Similar to the requirements specification and the architectural specification, the design specification also forms part of a formal contract between developers and clients.
+		The purpose of this document is to outline the design of the system to be developed. This document can be analyzed from a more technical view point and is meant to be an technical outline for developers.  Similar to the requirements specification and the architectural specification, the design specification also forms part of a formal contract between developers and clients.
 		\subsection{Document conventions}
 			\begin{itemize}
 				\item Documentation formulation:  LaTeX
@@ -71,12 +71,20 @@
 				\item \href{http://www.cs.up.ac.za/files/COS301/Download/1528/}{System Requirement Specification (SRS) for the NavUP System}
 			\end{itemize}
 	\section{System description}
+
+	The proposed system is an integration of four subsystems that in essence encompass the entire product. The system is aimed to manage users (the three types), and give each an enjoyable experience of the Notifications, GIS, Fitness and Points of Interest modules.  
 	
 	\section{Overall Architecture}
 		\subsection{Architectural patterns}
+		
+		The most notable architectural pattern is that of the MVC which is used to describe the notifications module best. This pattern however is not limited to the notifications section as the GIS module (map interface) uses it as well. 
 		\subsection{Software system attributes}
 		\subsection{Design constraints}
+		The design and implementation of the system is limited to the capabilities of the software and hardware in use. The system is required to run smoothly on all devices and as such cannot be RAM expensive, meaning that the computations should mainly be handled server-side. For the sake of ubiquity, the high-level programming language chosen for Android and IOS devices will limit the type of functionality. The intention being to release a singular product as opposed to multiple versions of a product. Therefore one has to be conscious of the capabilities of either language.
 		\subsection{Technology and framework selection}
+		The system requires a device which has internet connectivity, and a wifi network card. This hardware comes standard with most current mobile technologies and any other technology that supports a mapping system. On the server side, a database management tool is required, such as a MySQl server, to house user data.
+		
+		The system is intended to be released on Android and IOS devices.
 		
 		
 	\section{External Interface Requirements}
