@@ -87,6 +87,36 @@
 	\section{Details of subsystem}
 	\subsection{Subsystem Modules}
 		\subsubsection{User Module}
+		\paragraph{Scope and Structure}\mbox{} \\
+		The user module describes how the user will engage with other systems at an overall level. Due to the nature of the system and the dependence on other modules, aspects in certain figures will be vague only to be described later on.
+		\begin{figure}[h]
+			\includegraphics[width=\textwidth]{./Images/User_class_diagram_finished.png}
+			\caption{User Module Class Diagram} 
+		\end{figure}
+		{The user module uses inheritance to distinguish the three kinds of users with the primary/parent type being "User". The Registered user acts as the link differential point between both administrator and registered user accounts and guest users. The Registered users are allowed to interact with the timetable and Class classes. These are included within the user module as they are exclusive to the user modules functionality}
+		
+		
+	
+		\begin{figure}[h]
+			\includegraphics[width=\textwidth]{./Images/User_Use_Case_Diagrams_TimeTable.jpg}
+			\caption{Use Case Diagram for User module with Timetable }
+		\end{figure}
+	
+		{The Timetable Class describes how the actions of adding/removing a class as well as retrieving ones timetable are achieved. This system forms part of the core functionality of the entire system as a whole}
+		
+		\begin{figure}[h]
+			\includegraphics[width=\textwidth]{./Images/User_Use_Case_Diagrams_GIS.jpg}
+			\caption{Use Case Diagram for User Module with GIS services}
+		\end{figure}
+	
+		{All three users will require navigational services. The GIS service module handles the relay of geographic data between users and the server. This service, for the extended function of internal building mapping, would require blueprints/maps of the buildings to be uploaded and mapped. The "Find point of interest" use case is described fully by the "Point of Interest" use case diagram. }
+		
+		\begin{figure}
+			\includegraphics[width=\textwidth]{./Images/User_Use_Case_Fitness.jpg}
+			\caption{Use Case Diagram for the Fitness Module}
+		\end{figure}
+	
+		{The user interacts simply with the fitness module which corresponds in turn with the Notifications Module. Guest users are only allowed to view the leader board but are however not able to track their own progress.}
 		\subsubsection{Notifications Module}
 			\paragraph	{Scope}\mbox{} \\
 				\begin{figure}[h]
